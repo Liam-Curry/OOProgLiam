@@ -14,7 +14,7 @@ Enemy::Enemy() // default constructor
 
 	m_strength = (rand() % 10) + 1;
 	m_direction = (rand() % 2) + 1;        // Generates a random number between 1 and 2
-	m_speed = 5;
+	m_speed = 1;
 	m_alive = true;
 	m_image_enemy_width = 124;
 }
