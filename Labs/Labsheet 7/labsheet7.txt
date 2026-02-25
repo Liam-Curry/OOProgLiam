@@ -1,0 +1,563 @@
+//Liam Curry
+//c00311724
+//13-10-2025
+//4 hours 0 minutes
+//Labsheet 7, greater or less than zero, Income, Grade, Equally divisble..
+//farhenheit to celsuis, 3 numbers between 1 and 15,
+
+
+////PART 1
+
+
+//declare variables
+number=0;
+
+//get user input
+display message "Please enter a random number";
+input number;
+
+if (number = 0)
+	display message "Your number is equal to zero";
+else if (number > 0)
+	display message "Your number is greater than zero";
+else if (number < 0)
+	display message "Your number is less than zero";
+end else if
+
+
+////TEST DATA
+
+
+number=0
+display message "Your number is equal to zero";
+
+number=20
+display message "Your number is greater than zero";
+
+number=-1
+display message "Your number is less than zero";
+
+number=3
+display message "Your number is greater than zero";
+
+number=-9 
+display message "Your number is lesss than zero";
+
+
+////PART 2
+
+
+//delcare variables
+income=0;
+
+display message "Please enter your income";
+input income;
+
+if (income < 0) //error checking
+	display message "Error, income is less than zero, please re-enter a valid income";
+	input income;
+else if (income <= 30,000) //other display messages
+	display message "Low income";
+else if (income > 30,000 and income < 70,000)
+	display message "Middle income";
+else if (income >= 70,000)
+	display message "High income";
+end else if
+
+
+////TEST DATA
+
+
+User enters 29,130
+display message "Low income"
+
+User enters 54,294
+display message "Middle income"
+
+User enters 79,250
+display message "High income"
+
+
+////PART 3
+
+
+//declare variables
+grade=0;
+
+display message "Please enter the percent you recieved on your exam";
+input grade;
+
+if (grade > 100 and grade < 0) //Error checking
+	display message "Error, grade is too high or too low";
+else if (grade >=0 and grade < 40) //proper calculations
+	display message "You recieved a Fail";
+else if (grade >= 40 and grade <= 55)
+	display message "You recieved a Pass";
+else if (grade > 55 and < 70)
+	display message "You recieved a Merit";
+else if (grade >= 70 and <= 100)
+	display message "You recieved a Distinction, congradulations!";
+end else if
+
+
+////TEST DATA
+
+
+grade = 0
+display message fail
+
+grade = -1
+display message error
+
+grade = 70
+display message distinction
+
+
+////PART 4
+
+
+//declare variables
+first=0;
+second=0;
+ans=0;
+
+display message "Please enter your first number";
+input first;
+display message "Please enter your second number";
+input second;
+
+//calculations
+ans = first % second;
+
+//check for if divisible equally
+if (ans == 0)
+	display message "Your two numbers are equally divisible";
+else
+	display message "Your two numbers are not equally divisible";
+end if
+
+
+////TEST DATA
+
+
+first=4
+second=2
+ans=4%2
+ans=0
+equally divisible
+
+first=5
+second=2
+ans=5%2
+ans=1
+not equally divisible
+
+
+////PART 5A
+
+
+//(f-32)*5/9
+//declare variables
+float celsuis=0.0f;
+float farhenheit=0.0f;
+
+display message "Please enter a temperature in Farhenheit";
+input farhenheit;
+
+//calculations
+celsuis=(farhenheit-32)*(5/9);
+
+display message "Your temperature in celsuis is" + celsuis;
+
+
+////TEST DATA
+
+
+farhenheit=52
+celsuis=11.1111
+
+farhenheit=67
+celsuis=19.4444
+
+farhenheit=10
+celsuis=-12.2222
+
+
+////PART 5B 
+
+
+//declare variables
+first=0;
+second=0;
+third=0;
+
+display message "Enter your first number between 1 and 15";
+input first;
+display message "Enter your second number between 1 and 15";
+input second;
+display message "Enter you third number between 1 and 15";
+input third;
+
+if (first > 15 || first < 1 || second > 15 || second < 1 || third > 15 || third < 1)
+	display message "Error";
+else if (first <= second && first <= third)
+	display message "The smallest number is " + first;
+else if (second <= first && second <= third)
+	display message "The smallest number is " + second;
+else if (third <= first && third <= second)
+	display message "The smallest number is " + third;
+end else if
+
+
+////TEST DATA
+
+
+first = 12
+second = 5
+third = 9
+
+first if - fail
+second if - fail 
+third if - pass
+fourth if - skipped
+-second is lowest
+
+
+first = 15
+second = 7
+third = 2
+
+first if - fail
+second if - fail
+third if - fail
+fourth if - pass
+third is lowest
+
+
+first = 12
+second = 12
+third = 12
+
+first if - true
+second if - skipped
+third if - skipped
+fourth if - skipped
+
+
+////PART 6
+
+main()
+start function
+centi=0; //delcare variables
+
+display message "Enter centimetres";
+input centi;
+
+if (centi<=0)
+	display message "Error, value is too low";
+else
+	inchEquivalent(centi);
+end else if
+end function
+
+inchEquivalent(t_centi)
+start function
+inches=0;
+CONVERT=0.394;
+
+inches=t_centi*CONVERT;
+
+display message "Your messurement in inches is " + inches;
+end function
+
+
+////TEST DATA
+
+
+centi=5
+inches=1.97
+
+
+////PART 7
+
+
+main()
+start function
+hours=0;
+mins=0;
+secs=0;
+
+display message "Enter your hours";
+input hours;
+display message "Enter your minutes";
+input mins;
+display message "Enter your secs";
+input secs;
+
+if (hours<0 || mins<0 || secs<0)
+	display message "One value is a negative, please re-enter";
+else if (hours==0 && mins==0 && secs==0)
+	display message "All three values are zero, please re-enter
+else
+	secondsIn(hours,mins,secs);
+end else if
+end function
+
+secondsIn(t_hours,t_mins,t_secs)
+start function
+total=0;
+
+total=(t_hours*3600)+(t_mins*60)+t_secs;
+
+display message "Your total time in seconds is " + total;
+end function
+
+
+////TEST DATA
+
+
+hours=0;
+mins=21;
+secs=2
+total=1262
+
+
+////PART 8
+
+
+main()
+start function
+length=0;
+width=0;
+
+display message "Enter your length";
+input length;
+display message "Enter your width";
+input width;
+
+if (length<=0 || width<=0)
+	display message "Error, one side is an invalid value";
+else
+	callAreaRectangle(width, length);
+end else if
+end function
+
+callAreaRectangle(t_width, t_length);
+start function
+area=0;
+
+area=t_width*t_length;
+
+display message "Your area is " + area;
+end function
+
+
+////TEST DATA
+
+
+length=5
+width=5
+area=25
+
+
+////PART 9
+
+main()
+start function
+length1=0;
+length2=0;
+width1=0;
+width2=0;
+
+display message "Enter the first length of your rectangle";
+input length1;
+display message "Enter the second length of your rectangle";
+input length2;
+display message "Enter the first width of your rectangle";
+input width1;
+display message "Enter the second witdth of your rectangle";
+input width2;
+
+if (length1 != length2 || width1 != width2)
+	display message "Error, lengths and/or widths do not match";
+else
+	callPerimeterRectangle(length1, length2, width1, width2);
+end else if
+end function
+
+callPerimeterRectangle(t_length1, t_length2, t_width1, t_width2)
+start function
+perimeter=0;
+
+perimeter=t_length1+t_length2+t_width1+t_width2;
+
+dislay message "Your perimeter is " + perimeter;
+end function
+
+
+////TEST DATA
+
+
+l1=5
+l2=4
+w1=3
+w2=3
+ERROR 
+
+l1=5
+l2=5
+w1=2
+w2=2
+perimeter=5+5+2+2
+perimeter=14
+
+
+////PART 10
+
+
+main()
+start function
+eurototal=0;
+
+display message "Enter your amount of euro";
+input eurototal;
+
+if (eurototal<=0)
+	display message "Error, amount is too low";
+else
+	calculateEuroNotes(eurototal);
+end else if
+end function
+
+calculateEuroNotes(t_eurototal)
+start function
+noOf10=0;
+noOf1=0;
+
+noOf10=t_eurototal/10; //floor
+noOf1=t_eurototal-(noOf10*10); //floor
+
+display message "Your number of 10 euro notes is " + noOf10 + " and you total number of 1 euro notes is " + noOf1l;
+
+
+////TEST DATA
+
+
+total=34
+noOf10=34/10=3.4 -> 3
+noOf1 = 34-(noOf10*10) -> 34-(3*10) -> 34-(30) -> 4 = noOf1
+
+total = 52
+noOf10 = 52/10=5.2 -> 5
+noOf1 = 52-(noOf10*10) -> 52-(5*10) -> 52-(50) -> 2 = noOf1
+
+
+////PART 11
+
+main()
+start function
+first=0;
+second=0;
+third=0;
+
+display message "Enter a number between 4 and 16 (inclusive)";
+input first;
+display message "Enter a number between 4 and 16 (inclusive)";
+input second;
+display message "Enter a number between 4 and 16 (inclusive)";
+input third;
+
+if (first < 4 && first > 16 || second < 4 && second > 16 || third < 4 && third > 16)
+	display message "error, one value is outside of the given range";
+else if (first == second || first == third || second == third)
+	display message "Error, two or more values are equal to one another, please re-enter";
+else
+	increasingRange(first,second,third)
+end else if
+end function
+
+increasingRange(t_first,t_second,t_third)
+start function
+highest=0;
+middle=0;
+lowest=0;
+
+if (t_first>t_second && t_first>t_third)
+	highest=t_first;
+else if (t_second>t_first && t_second>t_third)
+	highest=t_second;
+else if (t_third>t_first && t_third>t_second)
+	highest=t_third;
+end else if
+
+if (t_first<t_second && t_first<t_third)
+	lowest=t_first;
+else if (t_second<t_first && t_second<t_third)
+	lowest=t_second;
+else if (t_third<t_first && t_third<t_second)
+	lowest=t_third;
+end else if
+
+if (t_first>lowest && t_first<highest)
+	middle=t_first;
+else if (t_second>lowest && t_second<highest)
+	middle=t_second;
+else if (t_third>lowest && t_third>highest)
+	middle=t_third;
+end else if
+
+display message "Your highest is " + highest + " and your middle is " + middle " and your lowest is " + lowest;
+end function
+
+
+////TEST DATA
+
+
+first=5;
+second=7;
+third=9;
+
+highest=9;
+midxdle=7;
+lowest=5;
+
+
+////PART 12
+
+
+main()
+start function
+const INTEREST=0.12;
+const INTEREST2=0.18;
+ammount=0;
+intrate1=0;
+intrate2=0;
+finalint=0;
+
+display message "Enter credit card bill";
+input ammount;
+
+if(ammount <= 0)
+	display message "invalid ammount entered";
+else
+	intrate1=500*INTEREST;
+	intrate2=(ammount-500)*INTEREST2;
+	finalint=intrate1+intrate2;
+	display message "Your interest rate is " + finalint;
+end else if
+end function
+
+
+////TEST DATA
+
+
+ammount=700
+
+intrate1=500*0.12
+intrate2=(700-500)*0.18
+intrate1=60
+inrate2=36
+finalint=60+36=96
+
+
+////PART 13

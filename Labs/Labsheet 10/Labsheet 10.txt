@@ -1,0 +1,101 @@
+////QUESTION 1
+
+main()
+start function
+	int number[10];
+
+	srand(stdtime(nullptr));
+
+	display message: "Array 1: ";
+
+	for (count = 0; count < 10; count++)
+		number[count] = (rand() % 14) + 8;
+		std::cout << number[count] + " ";
+	end for
+
+	display message: "Array 2: ";
+
+	for (count2 = 9; count2 >= 0; count2--)
+		display message: number[count2] + " ";
+	end for
+
+	display message: "Array 3: ";
+
+	for (count3 = 0; count3 < 10; count3 = count3 + 2)
+		display message: number[count3] + " ";
+	end for
+end function
+
+////QUESTION 2
+
+main()
+start function
+	float numbers[9];
+	int modCheck=0;
+	int evenCount=0;
+	int oddCheck=0;
+	int input=0;
+
+	display message: "Enter";
+
+	for(count=0;count<9;count++)
+		input "numbers[count];
+		input = numbers[count];
+		modCheck=input%2;
+	
+		if(modCheck==0)
+			evenCount++;
+		else
+			oddCount++;
+		end else if
+	end for
+	
+	display message: "There are/is " + evenCount + " even number(s) and " + oddCount + " odd number(s)";
+end function
+
+////QUESTION 3
+
+arrayCalculations();
+
+main()
+start funtion
+	arrayCalculations
+end function
+
+arrayCalculations()
+start function
+	arrayNum[8];
+	lowest=11;
+	highest=0;
+	sum=0;
+	avg=0;
+	ARRAY_COUNT=8;
+	
+	display message: "Enter";
+	
+	for(count=0;count<ARRAY_COUNT;count++)
+		input: arrayNum[count];
+		
+		if(arrayNum[count]<1 OR arrayNum[count]>10)
+			display message: "Error";
+			break;
+		end if
+		
+		if(arrayNum[count]>highest)
+			highest=arrayNum[count];
+		end if
+		
+		if(arrayNum[count]<lowest)
+			lowest=arrayNum[count];
+		end if
+		
+		sum=sum+arrayNum[count];
+	end for
+	
+	avg=sum/ARRAY_COUNT;
+	
+	display message: "Lowest" + lowest;
+	display message: "Highest" + highest;
+	display message: "sum" + sum;
+	display message: "average" + avg;
+end function

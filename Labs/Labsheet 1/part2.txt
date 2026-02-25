@@ -1,0 +1,13 @@
+// c = 2 pi r
+
+radius = 0;
+pi = 3.141;
+circumfrence = 0;
+2 = 2;
+
+// input from the user 
+display message "Please enter the radius of the circle;
+input radius;
+
+//calculate the circumfrence of the circle
+circumfrence = 2 * pi * radius;

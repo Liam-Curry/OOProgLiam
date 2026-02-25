@@ -1,0 +1,478 @@
+LABSHEET 8
+////Question 2
+
+inchesEquivalent(t_centi);
+
+main()
+start funtion
+
+centi=0;
+inches=0;
+bool errorCheck=false;
+
+display message "Please enter your amount on centimetres";
+input centi;
+
+if(centi<=0)
+	display message "Error, invalid value added";
+	errorCheck=true;
+else
+	inches=inchesEquivalent(centi);
+end else if
+
+if(errorCheck==false)
+	display message "Your centimetres in inches is " + inches;
+end if
+end function
+
+inchesEquivalent(t_centi)
+start function
+
+inches=0;
+CONVERT=0.394;
+
+inches=t_centi*CONVERT;
+
+return inches;
+end function
+
+
+////Test Data
+if centi=0
+errorCheck=true
+
+if centi=30
+t_centi=30
+30*CONVERT=11.82
+inches=11.82
+return inches
+
+
+
+////Question 3
+
+
+secondsCal(int t_hours,int t_minutes,int t_seconds);
+main()
+start function
+
+hours=0;
+minutes=0;
+seconds=0;
+totalSeconds=0;
+bool errorCheck=false;
+
+display message "Please enter your amount of hours";
+input hours;
+display message "Please enter your amount of minutes";
+input minutes;
+display message "Please enter your amount of seconds";
+input seconds;
+
+if(hours==0 && minutes==0 %% seconds==0)
+	errorCheck=true;
+	display message "Error, all three values are zero, please re-enter";
+else if(hours<0 || minutes<0 || seconds<0)
+	errorCheck=true;
+	display message "Error, at least one value entered is below zero, please re-enter";
+else
+	totalSeconds=secsIn(hours,minutes,seconds)
+end else if
+
+if(errorCheck==false)
+	display message "Your total time is : " + totalSeconds;
+end if
+end function
+
+secondsCal(int t_hours,int t_minutes,int t_seconds)
+start function
+
+totalSeconds=0;
+
+totalSeconds=(t_hours*3600)+(t_minutes*60)+t_seconds;
+return totalSeconds;
+end function
+
+
+////Test Data
+
+
+h=0
+m=2
+s=15
+totalSeconds=(0*3600)+(2*60)+15
+totalSeconds=0+120+15
+totalSeconds=135
+totalSeconds=135
+
+
+////Question 4
+
+
+getExamGrade(int examMark);
+main()
+start function
+
+examMark=0;
+string examGrade;
+bool errorCheck=false;
+
+display message "Please enter your exam mark";
+input examMark;
+
+if(examMark<0 || examMark>100)
+	display message "Invalid mark given";
+	errorCheck=true;
+else
+	examGrade=getExamGrade(examMark);
+end else if
+
+if(errorCheck==false)
+	display message "Your exam grade is : " + examGrade;
+end if
+end function
+
+string getExamGrade(t_examMark)
+start function
+
+sting examGrade;
+
+if(t_examMark>=0 && t_examMark<40)
+	examGrade="Fail";
+else if(t_examMark>=40 && t_examMark<55)
+	examGrade="Pass";
+else if(t_examMark>=55 && t_examMark<70)
+	examGrade="Merit";
+else if(t_examMark>=70 && t_examMark<=100)
+	examGrade="Distinction";
+end else if
+return examGrade
+
+
+////Test Data
+
+examMark=56
+examGrade=Merit
+
+
+////Question 5
+
+isDivisible(t_no1,t_no2)
+main()
+start function
+
+no1=0;
+no2=0;
+string ans;
+
+display message "Please enter two numbers that you want to test to see if they are equally divisible";
+input no1;
+input no2;
+
+if(no1<=0 || no2<=0)
+	display message "Error"
+else
+	ans=isDivisible(no1,no2);
+	display message "Your two numbers " + ans + "divisible by each other";
+end else if
+end function
+
+string isDivisible(t_no1,t_no2)
+start function
+
+string ans;
+mod=0;
+
+mod=t_no1%t_no2;
+
+if(mod==0)
+	ans="ARE";
+else
+	ans="ARE NOT";
+end else if
+return ans;
+end function
+
+
+////Test Data
+
+
+no1=12
+no2=6
+ans=ARE
+
+no1=12
+no2=5
+ans=ARE NOT 
+
+
+////Question 6
+
+
+string getCardSuit()
+string getCardFace()
+
+main()
+start function
+
+suitno=0;
+suitface=0;
+
+suitno=getCardSuit()
+suitface=getCardFace()
+
+display message "Your card suit is " + suitno + " your card face is " + suitface
+end function
+
+string getCardSuit()
+start function
+
+randno=0;
+suitno=0;
+
+randno=(rand()%4)+1;
+
+switch(randno)
+start switch
+case 1:
+	suitno="Hearts";
+	break;
+case 2:
+	suitno="Diamonds";
+	break;
+case 3:
+	suitno="Clubs";
+	break;
+case 4:
+	suitno="Spades";
+	break;
+end switch
+
+return suitno;
+end function
+
+string getCardFace()
+start function
+
+randno=0;
+suitface=0;
+
+randno=(rand()%13)+1;
+
+switch(randno)
+start switch
+case 1:
+	suitface="Ace";
+	break;
+case 2:
+	suitface="2";
+	break;
+case 3:
+	suitface="3";
+	break;
+case 4:
+	suitface="4";
+	break;
+case 5:
+	suitface="5";
+	break;
+case 6:
+	suitface="6";
+	break;
+case 7:
+	suitface="7";
+	break;
+case 8:
+	suitface="8";
+	break;
+case 9:
+	suitface="9";
+	break;
+case 10:
+	suitface="10";
+	break;
+case 11:
+	suitface="Jack";
+	break;
+case 12:
+	suitface="Queen";
+	break;
+case 13:
+	suitface="King";
+	break;
+end switch
+
+return suitface;
+end function
+
+
+////Question 7
+
+
+calculatePrice(t_age);
+
+main()
+start function
+
+age=0;
+ticket=0;
+price="";
+bool errorcheck=false;
+
+display message "Enter the cost of the ticket";
+input ticket;
+display message "Please enter your age";
+input age;
+
+if(ticket<=0)
+	display message "error"
+	errorcheck=true;
+end if
+
+if(age<=0)
+	display message "error";
+	errorcheck=true;
+end if
+
+if(errorcheck==false)
+	price = calculatePrice(age, ticket)
+end else if
+end function
+
+string calculatePrice(t_age, t_ticket)
+start function
+
+price1=0;
+price2=0;
+price3=0;
+price4=0;
+finalPrice='';
+cost=0;
+
+if(t_age > 0 && t_age < 5)
+	cost=t_ticket*0;
+	price1=cost;
+endif
+if(t_age >= 5 && t_age <= 12)
+	cost=t_ticket/2;
+	price2=cost;
+endif
+if(t_age > 12 && t_age <= 54)
+	cost=t_ticket*1;
+	price3=cost;
+endif
+if(t_age > 55)
+	cost=t_ticket*0;
+	price4=cost;
+endif
+finalPrice=price1+price2+price3+price4;
+return finalPrice
+end function
+
+
+////Test Data
+
+
+age=15
+price=6
+final price=6
+
+
+////Question 8
+
+calAreaRectangle(float t_length, float t_width);
+
+main()
+start function
+
+width=0;
+length=0;
+area=0;
+errorCheck=false;
+
+display message "Please enter width";
+input width
+display message "Please enter length";
+input length
+
+if (width <= 0)
+	display message "Error, width entered is invalid\n";
+	errorCheck = true;
+end if
+if (length <= 0)
+	display message "Error, length entered is invalid\n";
+	errorCheck = true;
+end if
+if (errorCheck == false)
+	area = calAreaRectangle(length, width);
+	display message "Your area is: " << area << std::endl;
+end if
+end function
+
+calAreaRectangle(float t_length, float t_width)
+start function
+
+area = 0;
+area = t_length * t_width;
+return area;
+end function
+
+
+////Test Data
+
+
+l=10
+w=5
+area=50
+
+
+////Question 9
+
+secsToHMS(t_totalSeconds)
+
+main()
+start function
+
+totalSeconds=0;
+
+display message "Please enter your total seconds";
+input totalSeconds;
+
+if(totalSeconds<=0)
+	display message "error"
+else
+	secsToHMS(totalSeconds);
+end else if
+end function
+
+secsToHMS(t_totalSeconds)
+start function
+
+hours=0;
+minutes=0;
+seconds=0;
+totalWOhours=0;
+totalWOminutes=0;
+
+hours=t_totalSeconds/3600;
+totalWOhours=t_totalSeconds-(hours * 3600);
+
+minutes=totalWOhours/60;
+totalWOminutes=totalWOhours%60;
+
+seconds=totalWOminutes;
+
+display message "your total hours is: " + hours + "Your total minutes is: " + minutes + "Your total seconds is: " + seconds;
+end function 
+
+
+////Test Data
+
+
+tS=25853
+h=7
+m=10
+s=53
+
+
+////Question 10

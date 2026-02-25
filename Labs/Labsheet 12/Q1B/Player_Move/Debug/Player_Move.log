@@ -1,0 +1,24 @@
+﻿  Enemy.cpp
+C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'Enemy.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
+      see declaration of 'std::runtime_error'
+      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,27): warning C4244:         with
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,27): warning C4244:         [
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,27): warning C4244:             T=float
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,27): warning C4244:         ]
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,19): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,19): warning C4244:         with
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,19): warning C4244:         [
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,19): warning C4244:             T=float
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(51,19): warning C4244:         ]
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(63,13): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(63,13): warning C4244:         with
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(63,13): warning C4244:         [
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(63,13): warning C4244:             T=float
+M:\Programming\Labs\Labsheet 12\Q1B\Player_Move\Enemy.cpp(63,13): warning C4244:         ]
+  Player_Move.vcxproj -> M:\Programming\Labs\Labsheet 12\Q1B\Debug\Player_Move.exe
