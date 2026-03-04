@@ -23,4 +23,5 @@ private: // data types
 	int m_speedRand = 5;
 	float m_imageHeight = 97.0f;
 	float m_imageWidth = 124.0f;
+	int m_counter = 0;
 };

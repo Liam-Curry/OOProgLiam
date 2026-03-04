@@ -35,11 +35,17 @@ sf::Sprite RandomEnemy::getBodyRand()
 void RandomEnemy::changeDirection()
 {
 	directionType();
-	int numberGen = (rand() % 10) + 1;
+	/*int numberGen = (rand() % 10) + 1;
 	if(numberGen == 5)
 	{
 		m_directionRand = (rand() % 4) + 1;
 		directionType();
+	}*/
+	if (m_counter >= 150)
+	{
+		m_directionRand = (rand() % 4) + 1;
+		directionType();
+		m_counter = 0;
 	}
 }
 
@@ -78,14 +84,15 @@ void RandomEnemy::directionType()
 			pos.x = SCREEN_WIDTH - m_imageWidth;
 		}
 	}
+	m_counter = m_counter + m_speedRand;
 	m_spriteRand.setPosition(pos);
 }
 
 void RandomEnemy::randomSpeed()
 {
-	int numberGen = (rand() % 20) + 1;
+	/*int numberGen = (rand() % 20) + 1;
 	if (numberGen == 16)
 	{
-		m_speedRand = (rand() % 30) + 1;
-	}
+		m_speedRand = (rand() % 20) + 1;
+	}*/
 }

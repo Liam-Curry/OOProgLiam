@@ -1,19 +1,19 @@
-﻿  Player.cpp
+﻿  RandomEnemy.cpp
 C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Player.cpp')
+  (compiling source file 'RandomEnemy.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
       see declaration of 'std::runtime_error'
       C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,27): warning C4244:         with
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,27): warning C4244:         [
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,27): warning C4244:             T=float
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,27): warning C4244:         ]
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,19): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,19): warning C4244:         with
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,19): warning C4244:         [
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,19): warning C4244:             T=float
-M:\Programming\Labs\Labsheet 12\Q5\Player_Move\Player.cpp(52,19): warning C4244:         ]
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,27): warning C4244:         with
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,27): warning C4244:         [
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,27): warning C4244:             T=float
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,27): warning C4244:         ]
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,19): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,19): warning C4244:         with
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,19): warning C4244:         [
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,19): warning C4244:             T=float
+M:\Programming\Labs\Labsheet 12\Q5\Player_Move\RandomEnemy.cpp(26,19): warning C4244:         ]
   Player_Move.vcxproj -> M:\Programming\Labs\Labsheet 12\Q5\Debug\Player_Move.exe
