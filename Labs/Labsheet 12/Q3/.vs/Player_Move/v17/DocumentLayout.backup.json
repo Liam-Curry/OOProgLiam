@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\CardDeck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|solutionrelative:Player_Move\\CardDeck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\CardDeck.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|solutionrelative:Player_Move\\CardDeck.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|solutionrelative:Player_Move\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|solutionrelative:Player_Move\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{87F3F37B-E5DE-484D-B6E3-CBEFFB165EA4}|Player_Move\\Player_Move.vcxproj|solutionrelative:Player_Move\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\main.cpp",
+              "RelativeDocumentMoniker": "Player_Move\\main.cpp",
+              "ToolTip": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\main.cpp",
+              "RelativeToolTip": "Player_Move\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-03T15:47:42.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Game.h",
+              "DocumentMoniker": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\Game.h",
+              "RelativeDocumentMoniker": "Player_Move\\Game.h",
+              "ToolTip": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\Game.h",
+              "RelativeToolTip": "Player_Move\\Game.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-03T15:47:41.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\Game.cpp",
+              "RelativeDocumentMoniker": "Player_Move\\Game.cpp",
+              "ToolTip": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\Game.cpp",
+              "RelativeToolTip": "Player_Move\\Game.cpp",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwHoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-03T15:47:39.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CardDeck.h",
+              "DocumentMoniker": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\CardDeck.h",
+              "RelativeDocumentMoniker": "Player_Move\\CardDeck.h",
+              "ToolTip": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\CardDeck.h",
+              "RelativeToolTip": "Player_Move\\CardDeck.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-03T15:47:37.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CardDeck.cpp",
+              "DocumentMoniker": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\CardDeck.cpp",
+              "RelativeDocumentMoniker": "Player_Move\\CardDeck.cpp",
+              "ToolTip": "M:\\Programming\\Labs\\Labsheet 12\\Q3\\Player_Move\\CardDeck.cpp",
+              "RelativeToolTip": "Player_Move\\CardDeck.cpp",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwFQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-03T15:47:35.59Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
