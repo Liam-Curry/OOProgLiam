@@ -1,3 +1,0 @@
-﻿  Q1.cpp
-C:\Users\C00311724\source\repos\Labsheet10\Labsheet10\Q1.cpp(13,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Labsheet10.vcxproj -> C:\Users\C00311724\source\repos\Labsheet10\x64\Debug\Labsheet10.exe
